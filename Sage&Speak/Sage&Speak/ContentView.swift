@@ -177,7 +177,7 @@ struct ContentView: View {
                         allTime    += 1
                         if streak == 0 { streak = 1 }
                         let wd  = Calendar.current.component(.weekday,from:Date())
-                        let ks  = ["Su","M","T","W","Th","F","Sat"]
+                        let ks  = ["Su","M","T","W","Th","F","Sa"]
                         if wd>=1&&wd<=7 { weekDays[ks[wd-1]] = true }
                     } label: {
                         Text("New Affirmation ✨")
